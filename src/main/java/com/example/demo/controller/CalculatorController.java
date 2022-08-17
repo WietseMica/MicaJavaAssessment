@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,11 +39,11 @@ public class CalculatorController {
 		}
 		
     }
-
+	
     @PostMapping("/calculator")
     private ResponseEntity<Calculator> saveCalculation(@RequestBody Calculator calculation) {
     	
-    	//TODO: NEED VALIDATION ON FIELD SYMBOL!!!!!
+    	//TODO: NEED VALIDATION!!!!!
     	
     	try {
     		calculatorService.saveOrUpdate(calculation);

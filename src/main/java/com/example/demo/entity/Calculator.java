@@ -47,5 +47,28 @@ public class Calculator {
 	@Column(name="created_at", nullable=false, updatable=false)
 	private Date createdAt;
 
+	public Long getId() {
+		return id;
+	}
+	
+	public double getFirstNumber() {
+		return firstNumber;
+	}
+	
+	public double getSecondNumber() {
+		return secondNumber;
+	}
+	
+	public String getSymbol() {
+		return symbol;
+	}
+	
+	public double getResult() {
+		return result;
+	}
+	
+	public Date getCreatedAt() {
+		return createdAt;
+	}
 	
 }
